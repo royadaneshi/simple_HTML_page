@@ -1,7 +1,7 @@
 .sidebar {
   position: absolute;
   right: 0;
-  top: 70px;
+  top: 30px;
   width: 20vw;
   /* height:3500%; */
   height :fit-content;
@@ -190,6 +190,7 @@ direction: center;
   flex-wrap: wrap;
   direction: rtl;
 justify-content: space-between;  
+margin-top: 5vh;
 }
 
 .inside_time_container{
@@ -235,7 +236,11 @@ body {
 .bell{
   color: #73b5eb;
   direction: left;
-  width: 5vh;
+  font-size: 7vh;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 1vw;
+  top: 0.02vh;
 }
 @media screen and (max-height: 450px) {
   .sidebar {
