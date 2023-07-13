@@ -3,12 +3,13 @@
 <head>
     <script src="index.js"></script> 
     <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body  onload="calander()">
     <div class="grid-container">
     <div class = "first_rec">
-
         <div class = "nezarat">
             نظارت ، لیست آزمون ها
         </div>
@@ -34,29 +35,145 @@
         <div class="cards">
        
             <div class="grid-item">
-                <div>111111111111</div>
+                <div>
+                    
+                    <i class="fa-solid fa-wifi icon"></i>
+                    <i class="fa-solid fa-square-phone icon"></i>
+                    <i class="fa-regular fa-user icon"></i>
+                    <i class="fa-solid fa-laptop icon"></i>
+                    <i class="fa-solid fa-microphone icon"></i>
+                    <i  class="fa-solid fa-comments icon"></i>
+
+                </div>
                 <img src="1.jpg">
-                <div>1111111111</div>
+                <div>
+                    <i class="fa-solid fa-pen-to-square icon2"></i>
+                    <i class="fa-solid fa-microphone icon2"></i>
+                    <i class="fa-regular fa-circle-user icon2"></i>
+                    <i class="fa-solid fa-book icon2"></i>
+                    <i class="fa-solid fa-volume-high icon2"></i>
+                    <i class="fa-solid fa-check icon2"></i>
+                    <i class="fa-solid fa-phone icon2 icon3"></i>
+                    <i class="fa-solid fa-phone icon2 icon4"></i>
+                    <i class="fa-solid fa-user icon2"></i>
+
+                </div>
 
             </div>
-            <div class="grid-item"> <div>111111111111</div>
+            <div class="grid-item"> <div>
+                <i class="fa-solid fa-wifi icon"></i>
+                <i class="fa-solid fa-square-phone icon"></i>
+                <i class="fa-regular fa-user icon"></i>
+                <i class="fa-solid fa-laptop icon"></i>
+                <i class="fa-solid fa-microphone icon"></i>
+                <i  class="fa-solid fa-comments icon"></i>
+            </div>
             <img src="2.jpg">
-            <div>1111111111</div>
+            <div>
+                <i class="fa-solid fa-pen-to-square icon2"></i>
+                <i class="fa-solid fa-microphone icon2"></i>
+                <i class="fa-regular fa-circle-user icon2"></i>
+                <i class="fa-solid fa-book icon2"></i>
+                <i class="fa-solid fa-volume-high icon2"></i>
+                <i class="fa-solid fa-check icon2"></i>
+                <i class="fa-solid fa-phone icon2 icon3"></i>
+                <i class="fa-solid fa-phone icon2 icon4"></i>
+                <i class="fa-solid fa-user icon2"></i>
+            </div>
         </div>
-            <div class="grid-item"> <div>111111111111</div>
+            <div class="grid-item"> <div>
+                        
+                <i class="fa-solid fa-wifi icon"></i>
+                <i class="fa-solid fa-square-phone icon"></i>
+                <i class="fa-regular fa-user icon"></i>
+                <i class="fa-solid fa-laptop icon"></i>
+                <i class="fa-solid fa-microphone icon"></i>
+                <i  class="fa-solid fa-comments icon"></i>
+
+            </div>
             <img src="3.jpg">
-            <div>1111111111</div>
+            <div>
+                <i class="fa-solid fa-pen-to-square icon2"></i>
+                <i class="fa-solid fa-microphone icon2"></i>
+                <i class="fa-regular fa-circle-user icon2"></i>
+                <i class="fa-solid fa-book icon2"></i>
+                <i class="fa-solid fa-volume-high icon2"></i>
+                <i class="fa-solid fa-check icon2"></i>
+                <i class="fa-solid fa-phone icon2 icon3"></i>
+                <i class="fa-solid fa-phone icon2 icon4"></i>
+                <i class="fa-solid fa-user icon2"></i>
+            </div>
         </div>
-            <div class="grid-item"> <div>111111111111</div>
+            <div class="grid-item"> <div>
+                        
+                <i class="fa-solid fa-wifi icon"></i>
+                <i class="fa-solid fa-square-phone icon"></i>
+                <i class="fa-regular fa-user icon"></i>
+                <i class="fa-solid fa-laptop icon"></i>
+                <i class="fa-solid fa-microphone icon"></i>
+                <i  class="fa-solid fa-comments icon"></i>
+
+            </div>
             <img src="1.jpg">
-            <div>1111111111</div>
+            <div>
+                <i class="fa-solid fa-pen-to-square icon2"></i>
+                <i class="fa-solid fa-microphone icon2"></i>
+                <i class="fa-regular fa-circle-user icon2"></i>
+                <i class="fa-solid fa-book icon2"></i>
+                <i class="fa-solid fa-volume-high icon2"></i>
+                <i class="fa-solid fa-check icon2"></i>
+                <i class="fa-solid fa-phone icon2 icon3"></i>
+                <i class="fa-solid fa-phone icon2 icon4"></i>
+                <i class="fa-solid fa-user icon2"></i>
+            </div>
         </div>
         </div>
     </div>
     </div>
 
     <div id="mySidebar" class="sidebar">
-            
+        <i class="fa-regular fa-bell bell"></i>
+        <div class="time_container">
+           
+        <div id="title" class="inside_time_container">
+            تقویم آزمونها
+        </div>
+     
+        <div id="time"  class="inside_time_container">
+
+        </div>
+    </div>
+        <div class="calander">
+            <div class="day">
+                <div>شنبه</div>
+                <div id="one" class="date"></div>
+            </div>
+            <div class="day">
+                <div>یکشنبه</div>
+                <div id="two"class="date"></div>
+            </div>
+            <div class="day">
+                <div>دوشنبه</div>
+                <div id="three"class="date"></div>
+            </div>
+            <div class="day">
+                <div>سه‌شنبه</div>
+                <div id="four" class="date"></div>
+            </div>
+            <div class="day">
+                <div>چهارشنبه</div>
+                <div id="five" class="date"></div>
+            </div>
+            <div class="day">
+                <div>پنجشنبه</div>
+                <div id="six"class="date"></div>
+            </div>
+            <div class="day">
+                <div>جمعه</div>
+                <div id="seven"class="date"></div>
+            </div>
+        </div>
+        <div id="gray" class="gray" >
       <div id="main2"> 
         <img id="openbtn2"  src="read-more.png" onclick="read_more_btn()"></button>
       </div>
@@ -76,10 +193,8 @@
         <img id="line"  src="Vector-Smart-Object4.png" ></button>
 
       </div>
-<!--       
-      <div id="main"> 
-        <img class="openbtn"  src="read-more.png" onclick="read_more_btn()"></button>
-      </div> -->
+    </div>
+
 
     </div>
 

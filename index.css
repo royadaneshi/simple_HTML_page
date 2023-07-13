@@ -2,10 +2,10 @@
   position: absolute;
   right: 0;
   top: 70px;
-  width: 15vw;
+  width: 20vw;
   /* height:3500%; */
   height :fit-content;
-  background-color: #d1d1e0;
+  /* background-color: #d1d1e0; */
   overflow-x: hidden;
   padding-top: 10px;
   transition: 0.5s;
@@ -14,7 +14,22 @@
   text-align: right;
   border-radius: 2vh;
 }
-
+.gray {
+    background-color: #d1d1e0;
+    transition: 0.5s;
+/* 
+  position: absolute;
+  right: 0;
+  top: 70px;
+  width: 15vw;
+  height :fit-content;
+  overflow-x: hidden;
+  padding-top: 10px;
+  align-content: flex-end;
+  z-index: 1;
+  text-align: right;*/
+  border-radius: 2vh; 
+}
 .sidebar.open {
   width: 10vw;
 }
@@ -58,7 +73,7 @@
 }
 .details{
   display: flex;
-  background-color: rgb(34, 182, 219);
+  background-color:#73b5eb;
   width: calc(100% - 15vw); 
   align-self: flex-start; 
   justify-content: flex-end; 
@@ -100,10 +115,11 @@ border-radius: 1vw;
 .first_rec {
   /* background-color: #c412c4; */
   transition: width 0.5s;
-  width : calc(100% - 16vw);
+  width : calc(100% - 21vw);
 }
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
   direction: rtl;
 justify-content: space-between;  
 
@@ -134,6 +150,7 @@ margin-top: 20px;
 .grid-item img {
   max-width: 65%;
   height: auto;
+
 }
 .input-name{
   align-content: rtl;
@@ -142,6 +159,83 @@ margin-top: 20px;
   margin-left: 23px;
   margin-top: 20px;
   width: 290px;
+}
+.calander{
+  display: flex;
+  flex-wrap: wrap;
+  direction: rtl;
+justify-content: space-around;  
+}
+.date{
+  flex: 1;
+  padding: 12px;
+ margin-top: 1vh;
+  margin-bottom: 1vh; 
+  margin-left: 1vh;
+  direction: rtl;
+  text-align: right; 
+  background-color:#d1d1e0;
+  text-decoration: none;
+border-radius: 1vw;
+direction: center;
+width: max-content;
+
+}
+.day{
+direction: center;
+}
+
+.time_container{
+  display: flex;
+  flex-wrap: wrap;
+  direction: rtl;
+justify-content: space-between;  
+}
+
+.inside_time_container{
+  flex: 1;
+  padding: 12px;
+ margin-top: 1vh;
+  margin-bottom: 1vh; 
+  margin-left: 1vh;
+  direction: rtl;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1vw;
+}
+#time{
+  direction: rtl;
+  text-align: right; 
+  padding-right: 7vw;
+  justify-content: space-around;  
+
+}
+body {
+  font-family: Vazirmatn, sans-serif;
+}
+.icon{
+  color: #b311b3;
+  padding: 0.5vw;
+  cursor: pointer;
+}
+.icon2{
+  color: #73b5eb;
+  padding: 0.5vw;
+  cursor: pointer;
+
+}
+.icon3{
+  color: #42ee0d;
+  padding: 0.5vw;
+}
+.icon4{
+  color: #ee2d1f;
+  padding: 0.5vw;
+}
+.bell{
+  color: #73b5eb;
+  direction: left;
+  width: 5vh;
 }
 @media screen and (max-height: 450px) {
   .sidebar {
