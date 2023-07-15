@@ -43,7 +43,19 @@
   display: block;
   transition: 0.3s;
 }
-
+.text-overlay {
+  position: relative;
+  top: -12%;
+  left: 32.5%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  background-color: #860f86;
+  max-width: 65%;
+  direction: center;
+  background-color: rgb(139, 30, 143,0.4);
+}
 #openbtn2 {
   padding: 8px 32px 8px 8px;
   font-size: 5px;
@@ -153,8 +165,11 @@
 .find{
 background-color: #860f86;
 width:103px ;
-margin-top: 20px;
+margin-top: 3vh;
 color: #ffffff;
+height: 2vw;
+width: 6vw;
+flex-wrap: wrap;
 }
 .grid-item{
   padding-left: 0;
@@ -163,17 +178,7 @@ color: #ffffff;
 .grid-item img {
   max-width: 65%;
   direction: center;
-  
-  /* height: auto; */
-}
-/* .input-name{
-  align-content: rtl;
-  direction: center;
-  text-align: right; 
-  margin-left: 23px;
-  margin-top: 20px;
-  width: 290px;
-} */
+  }
 
 .input-name {
   position: relative;
@@ -186,21 +191,21 @@ color: #ffffff;
 }
 
 .input-name input {
-  /* padding-right: 30px;  */
- 
+  padding-left: calc(2vw + 10px); 
+  width: 15vw;
+  height: 1.5vw;
   text-align: right; 
-  margin-right: 23px;
-  margin-right: 3vw;
+  padding-right: calc(1.3vw + 10px); 
 }
+
 
 .input-name .icon2 {
   position: absolute;
-  right: 5px; 
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
-
 } 
+
 .calander{
   display: flex;
   flex-wrap: wrap;
@@ -210,17 +215,19 @@ justify-content: space-around;
 .date{
   flex: 1;
   padding: 12px;
- margin-top: 1vh;
+  margin-top: 1vh;
   margin-bottom: 1vh; 
   margin-left: 1vh;
   direction: rtl;
   text-align: right; 
   background-color:#d1d1e0;
   text-decoration: none;
-border-radius: 1vw;
-direction: center;
-width: max-content;
+  border-radius: 50%;
+  direction: center;
 
+  width: max-content;
+  height: max-content;
+  text-align: center;
 }
 .day{
 direction: center;

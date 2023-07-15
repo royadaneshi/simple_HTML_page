@@ -98,14 +98,15 @@ function calander() {
     var currentDay = currentDate.getDay()+1; // 0 (شنبه)  6 (جمعه)
 
   }
-  var firstDayOffset = currentDay > -1 ? currentDay - 1 : 7;
-  var firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - (firstDayOffset+1));
-  var second = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate()- (firstDayOffset));
-  var third = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - (firstDayOffset-1));
-  var fourth =  new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - (firstDayOffset-2));
-  var fifth = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - (firstDayOffset-3));
-  var sixth = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - (firstDayOffset-4));
-  var lastDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - (firstDayOffset-5));
+  var firstDayOffset =  currentDay ;
+
+  var firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - (firstDayOffset));
+  var second = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate()- (firstDayOffset-1));
+  var third = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - (firstDayOffset-2));
+  var fourth =  new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - (firstDayOffset-3));
+  var fifth = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - (firstDayOffset-4));
+  var sixth = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - (firstDayOffset-5));
+  var lastDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() - (firstDayOffset-6));
 
 
   document.getElementById("one").textContent = String(firstDay.getDate());
