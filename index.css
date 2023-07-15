@@ -180,6 +180,14 @@ flex-wrap: wrap;
   direction: center;
   }
 
+  .icon-captions {
+    position: relative;
+    top: -7%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    max-width: 70%;
+  }
+  
 .input-name {
   position: relative;
   /* align-content: rtl;
@@ -262,6 +270,7 @@ margin-top: 4vh;
 body {
   font-family: Vazirmatn, sans-serif;
 }
+
 .icon{
   color: #860f86;
   padding: 0.5vw;
