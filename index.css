@@ -2,9 +2,9 @@
   position: absolute;
   right: 0;
   top: 30px;
-  width: 20vw;
-  /* height:3500%; */
-  height :fit-content;
+  width: 22vw;
+  /* height:114vh; */
+  height :min-content;
   /* background-color: #d1d1e0; */
   overflow-x: hidden;
   padding-top: 10px;
@@ -13,22 +13,13 @@
   z-index: 1;
   text-align: right;
   border-radius: 2vh;
+  
 }
 .gray {
     background-color: #d1d1e0;
     transition: 0.5s;
-/* 
-  position: absolute;
-  right: 0;
-  top: 70px;
-  width: 15vw;
-  height :fit-content;
-  overflow-x: hidden;
-  padding-top: 10px;
-  align-content: flex-end;
-  z-index: 1;
-  text-align: right;*/
-  border-radius: 2vh; 
+    border-radius: 2vh; 
+    height: 113vh;
 }
 .sidebar.open {
   width: 10vw;
@@ -48,7 +39,7 @@
 }
 
 .sidebar img {
-  color: #b311b3;
+  color: #860f86;
   display: block;
   transition: 0.3s;
 }
@@ -67,18 +58,18 @@
 
 .nezarat{
   font-size: 2vw;
-  color: #b311b3;
+  color: #860f86;
   direction: rtl;
   
 }
 .details{
   display: flex;
-  background-color:#73b5eb;
+  background-color:#4dbbbb;
   width: calc(100% - 15vw); 
   align-self: flex-start; 
   justify-content: flex-end; 
   margin-left: 15vw;
-  border-radius: 1vw;
+  border-radius: 0.3vw;
 }
 .box {
   flex: 1;
@@ -92,74 +83,124 @@
   position: absolute;
   top: 10px;
   left: 10px;
+  /* size: 9vh; */
+  width: 7vw;
+  height:13vh;
 }
 .buttons{
+  display: flex;
+  flex-wrap: wrap;
   direction: rtl;
-  text-align: right; 
+  text-align: right;
   text-decoration: none;
- 
+  margin-bottom: 0.5vh;
+  align-items: center; 
+
 }
 .box2 {
-  flex: 1;
   padding: 12px;
   margin-top: 10px;
   margin-left: 40px;
   margin-bottom: 10px;
   direction: rtl;
   text-align: right; 
-  background-color: #b311b3;
+  background-color: #860f86;
   text-decoration: none;
   cursor: pointer;
-border-radius: 1vw;
+  border-radius: 0.5vw;
+  color: #ffffff;
+
+  width: 10vw; 
+  height: 2vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .first_rec {
-  /* background-color: #c412c4; */
+  /* background-color: #d1d1e0; */
   transition: width 0.5s;
-  width : calc(100% - 21vw);
+  width : calc(100% - 23vw);
 }
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   direction: rtl;
-justify-content: space-between;  
-
+  height: 5vh;
+  justify-content: space-between;  
+  margin-bottom: 1vh;
+  padding-left: 7vw;
+  padding-right: 2vw;
 }
 .datas{
   display: grid;
   grid-template-rows: 1fr 5fr; 
-  gap: 10px; 
   background-color: #d1d1e0;
-  height: 10vh;
   justify-content: space-between;  
   direction: rtl;
   border-radius: 1vw;
+  margin-left: 4vw;
+  padding-right: 10vw;
 }
+
 .cards{
   display: grid;
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr 1fr; 
-  gap: 10px; 
+  /* gap: 10px;  */
   background-color: #d1d1e0;
-  height: 10vh;
 }
 .find{
-background-color: #b311b3;
+background-color: #860f86;
 width:103px ;
 margin-top: 20px;
+color: #ffffff;
+}
+.grid-item{
+  padding-left: 0;
+
 }
 .grid-item img {
   max-width: 65%;
-  height: auto;
-
+  direction: center;
+  
+  /* height: auto; */
 }
-.input-name{
+/* .input-name{
   align-content: rtl;
   direction: center;
   text-align: right; 
   margin-left: 23px;
   margin-top: 20px;
   width: 290px;
+} */
+
+.input-name {
+  position: relative;
+  /* align-content: rtl;
+  direction: center;
+  text-align: right;  */
+  margin-left: 1vw;
+  margin-top: 3vh;
+  width: 7vw;
 }
+
+.input-name input {
+  /* padding-right: 30px;  */
+ 
+  text-align: right; 
+  margin-right: 23px;
+  margin-right: 3vw;
+}
+
+.input-name .icon2 {
+  position: absolute;
+  right: 5px; 
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+
+} 
 .calander{
   display: flex;
   flex-wrap: wrap;
@@ -190,13 +231,13 @@ direction: center;
   flex-wrap: wrap;
   direction: rtl;
 justify-content: space-between;  
-margin-top: 5vh;
+margin-top: 4vh;
 }
 
 .inside_time_container{
   flex: 1;
-  padding: 12px;
- margin-top: 1vh;
+  /* padding: 12px; */
+ margin-top: 2.5vh;
   margin-bottom: 1vh; 
   margin-left: 1vh;
   direction: rtl;
@@ -215,12 +256,12 @@ body {
   font-family: Vazirmatn, sans-serif;
 }
 .icon{
-  color: #b311b3;
+  color: #860f86;
   padding: 0.5vw;
   cursor: pointer;
 }
 .icon2{
-  color: #73b5eb;
+  color: #4dbbbb;
   padding: 0.5vw;
   cursor: pointer;
 
@@ -234,7 +275,7 @@ body {
   padding: 0.5vw;
 }
 .bell{
-  color: #73b5eb;
+  color: #4dbbbb;
   direction: left;
   font-size: 7vh;
   flex-wrap: wrap;

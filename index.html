@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script>
+     setInterval(calander, 1000);
+</script>
 </head>
 
 <body  onload="calander()">
@@ -25,10 +28,16 @@
             <button class="box2">نمودار سلامت آزمون</button>
         
         </div>
-        <div class="datas">
+        <div class="datas ">
         <div class="flex-container">
-            <input type="text" class="input-name" placeholder="نام و نام خانوادگی:">
-            <input type="text" class="input-name" placeholder="شماره دانشجویی:">
+            <div class="input-name">
+                <input type="text" placeholder="نام و نام خانوادگی:">
+                <i class="fa-solid fa-search icon2"></i>
+              </div>
+            <div class="input-name">
+                <input type="text" placeholder="شماره دانشجویی:">
+                <i class="fa-solid fa-search icon2"></i>
+              </div>
             <button class="find">جستجو</button>
 
         </div>
@@ -55,6 +64,8 @@
                     <i class="fa-solid fa-check icon2"></i>
                     <i class="fa-solid fa-phone icon2 icon3"></i>
                     <i class="fa-solid fa-phone icon2 icon4"></i>
+           
+                    <i class="fa-solid fa-book icon2"></i>
                     <i class="fa-solid fa-user icon2"></i>
 
                 </div>
@@ -78,6 +89,8 @@
                 <i class="fa-solid fa-check icon2"></i>
                 <i class="fa-solid fa-phone icon2 icon3"></i>
                 <i class="fa-solid fa-phone icon2 icon4"></i>
+           
+                <i class="fa-solid fa-book icon2"></i>
                 <i class="fa-solid fa-user icon2"></i>
             </div>
         </div>
@@ -101,6 +114,8 @@
                 <i class="fa-solid fa-check icon2"></i>
                 <i class="fa-solid fa-phone icon2 icon3"></i>
                 <i class="fa-solid fa-phone icon2 icon4"></i>
+            
+                <i class="fa-solid fa-book icon2"></i>
                 <i class="fa-solid fa-user icon2"></i>
             </div>
         </div>
@@ -124,6 +139,8 @@
                 <i class="fa-solid fa-check icon2"></i>
                 <i class="fa-solid fa-phone icon2 icon3"></i>
                 <i class="fa-solid fa-phone icon2 icon4"></i>
+               
+                <i class="fa-solid fa-book icon2"></i>
                 <i class="fa-solid fa-user icon2"></i>
             </div>
         </div>
@@ -173,10 +190,10 @@
                 <div id="seven"class="date"></div>
             </div>
         </div>
-        <div id="gray" class="gray" >
-      <div id="main2"> 
-        <img id="openbtn2"  src="read-more.png" onclick="read_more_btn()"></button>
-      </div>
+        <div class="gray" >
+            <div id="main2"> 
+                <img id="openbtn2"  src="read-more.png" onclick="read_more_btn()"></button>
+            </div>
 
         <a class="items" href="#">داشبورد</a>
         <a class="items"  href="#">ورود به آزمون</a>
@@ -190,7 +207,7 @@
         <a  class="items" href="#">مدیریت پارامترهای خطا</a>
         <a  class="items" href="#">پشتیبانی</a>
 
-        <img id="line"  src="Vector-Smart-Object4.png" ></button>
+        <img id="line"  src="Vector-Smart-Object4.png" >
 
       </div>
     </div>
